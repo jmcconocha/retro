@@ -7,8 +7,9 @@ import { Grid, Typography, makeStyles } from "@material-ui/core";
 import CreateBoardDialog from "./CreateBoardDialog";
 import LoadBoardDialog from "./LoadBoardDialog";
 import PlanningPokerDialog from "./PlanningPokerDialog";
-import hero from "../../assets/hero.jpg";
+import hero from "../../assets/RAMeatball.png";
 import { Hero } from "../styled-components";
+import { handleNormalDrag } from "../../utils/dnd-handler.utils";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -41,17 +42,14 @@ export default function HomePage() {
         alignItems="center"
       >
         <Grid item xs={12}>
-          <Typography variant="h2" className={classes.greetingText}>
+          <Typography variant="h3" className={classes.greetingText}>
             <Typewriter
               onInit={(typewriter: any) => {
                 typewriter.start();
               }}
               options={{
                 strings: [
-                  "Welcome to Retro.",
-                  "Willkommen zu Retro.",
-                  "Bienvenue à Retro.",
-                  "Selamat Datang di Retro.",
+                  "Green Team Retrospective",
                 ],
                 autoStart: true,
                 loop: true,
