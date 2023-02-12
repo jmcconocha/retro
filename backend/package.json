@@ -61,7 +61,7 @@
     "eslint-config-import": "^0.13.0",
     "eslint-config-prettier": "^8.3.0",
     "jest": "^27.0.6",
-    "nodemon": "^2.0.12",
+    "nodemon": "^2.0.20",
     "prettier": "^2.3.2",
     "rimraf": "^3.0.2",
     "ts-jest": "^27.0.4",
